@@ -1,0 +1,20 @@
+$kind: collection
+name: WineQualityApp
+description: |-
+  API collection for the WineQualityApp — a wine quality prediction application.
+
+  Covers two services:
+  - **.NET API** (`{{dotnet_base_url}}`) — the main ASP.NET Core backend that validates requests, orchestrates predictions, and persists results.
+  - **Python ML Service** (`{{python_base_url}}`) — the FastAPI service that loads the trained Scikit-learn Random Forest model and runs inference.
+
+  Set `dotnet_base_url` and `python_base_url` to point at the right environment.
+variables:
+  - key: dotnet_base_url
+    value: 'http://localhost:5294'
+    description: Base URL for the .NET ASP.NET Core API
+  - key: python_base_url
+    value: 'http://127.0.0.1:8000'
+    description: Base URL for the Python FastAPI ML service
+  - key: prediction_id
+    value: ''
+    description: ID of a prediction returned by POST /api/predictions — used by the GET by-ID request

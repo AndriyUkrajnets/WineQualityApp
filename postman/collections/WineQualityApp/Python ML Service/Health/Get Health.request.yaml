@@ -1,0 +1,8 @@
+$kind: http-request
+order: 1000
+method: GET
+url: '{{python_base_url}}/health'
+description: |-
+  Returns the health status of the Python ML service, including whether the model is loaded and ready.
+
+  **Response:** `{ "status": "ready" | "model_unavailable", "model_ready": true | false }`

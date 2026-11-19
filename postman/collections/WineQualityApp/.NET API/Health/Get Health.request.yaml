@@ -1,0 +1,8 @@
+$kind: http-request
+order: 1000
+method: GET
+url: '{{dotnet_base_url}}/health'
+description: |-
+  Returns the health status of the .NET API.
+
+  **Response:** `{ "status": "healthy" }`

@@ -1,0 +1,3 @@
+$kind: collection
+name: .NET API
+description: Endpoints exposed by the ASP.NET Core backend running at `{{dotnet_base_url}}`.

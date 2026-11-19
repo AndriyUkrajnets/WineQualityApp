@@ -1,0 +1,35 @@
+$kind: http-request
+order: 1000
+method: POST
+url: '{{dotnet_base_url}}/api/predictions'
+description: |-
+  Submit 11 physicochemical wine features plus color to get a predicted quality score.
+
+  The .NET API validates the request, forwards it to the Python ML service, and returns the predicted quality.
+
+  **Required fields:** `fixed_acidity`, `volatile_acidity`, `citric_acid`, `residual_sugar`, `chlorides`, `free_sulfur_dioxide`, `total_sulfur_dioxide`, `density`, `pH`, `sulphates`, `alcohol`, `color` (`"red"` or `"white"`).
+
+  **Responses:**
+  - `200 OK` — prediction succeeded, returns `{ "predicted_quality": <number> }`
+  - `400 Bad Request` — validation failed
+  - `502 Bad Gateway` — Python ML service returned an error
+  - `503 Service Unavailable` — Python ML service is unavailable
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "fixed_acidity": 7.4,
+      "volatile_acidity": 0.7,
+      "citric_acid": 0.0,
+      "residual_sugar": 1.9,
+      "chlorides": 0.076,
+      "free_sulfur_dioxide": 11.0,
+      "total_sulfur_dioxide": 34.0,
+      "density": 0.9978,
+      "pH": 3.51,
+      "sulphates": 0.56,
+      "alcohol": 9.4,
+      "color": "red"
+    }

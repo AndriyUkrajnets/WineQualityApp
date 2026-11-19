@@ -1,0 +1,34 @@
+$kind: http-request
+order: 1000
+method: POST
+url: '{{python_base_url}}/predict'
+description: |-
+  Directly call the Python ML service to predict wine quality from the 12 input features.
+
+  The pipeline applies a `ColumnTransformer` (numeric passthrough + one-hot encoding for `color`) before running the `RandomForestRegressor`.
+
+  **Required fields:** `fixed_acidity`, `volatile_acidity`, `citric_acid`, `residual_sugar`, `chlorides`, `free_sulfur_dioxide`, `total_sulfur_dioxide`, `density`, `pH`, `sulphates`, `alcohol`, `color` (`"red"` or `"white"`). Extra fields are rejected (`extra="forbid"`).
+
+  **Responses:**
+  - `200 OK` — returns `{ "predicted_quality": <float> }`
+  - `422 Unprocessable Entity` — Pydantic validation error
+  - `503 Service Unavailable` — model not loaded
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "fixed_acidity": 7.9,
+      "volatile_acidity": 0.18,
+      "citric_acid": 0.37,
+      "residual_sugar": 1.2,
+      "chlorides": 0.04,
+      "free_sulfur_dioxide": 16.0,
+      "total_sulfur_dioxide": 75.0,
+      "density": 0.992,
+      "pH": 3.18,
+      "sulphates": 0.63,
+      "alcohol": 10.8,
+      "color": "white"
+    }

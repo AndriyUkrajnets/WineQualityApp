@@ -1,0 +1,3 @@
+$kind: collection
+name: Python ML Service
+description: Endpoints exposed by the FastAPI ML service running at `{{python_base_url}}`. The model is a Scikit-learn Random Forest pipeline loaded from a Joblib artifact at startup.
