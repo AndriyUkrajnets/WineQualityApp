@@ -31,3 +31,11 @@ address printed by `dotnet run`.
 
 The API does not yet persist predictions or provide history. SQL Server and
 history endpoints are a later milestone.
+
+## Run .NET unit tests
+
+Stop a running .NET API instance, then run from this directory:
+
+```powershell
+dotnet test WineQualityApp.sln
+```

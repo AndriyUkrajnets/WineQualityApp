@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WineQualityApp.Domain", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WineQualityApp.Infrastructure", "src\WineQualityApp.Infrastructure\WineQualityApp.Infrastructure.csproj", "{A7C48256-9E37-4502-ADEC-044DAD394FF8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WineQualityApp.UnitTests", "tests\WineQualityApp.UnitTests\WineQualityApp.UnitTests.csproj", "{250AA24A-EAC2-4885-8E9B-91553047C722}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,18 @@ Global
 		{A7C48256-9E37-4502-ADEC-044DAD394FF8}.Release|x64.Build.0 = Release|Any CPU
 		{A7C48256-9E37-4502-ADEC-044DAD394FF8}.Release|x86.ActiveCfg = Release|Any CPU
 		{A7C48256-9E37-4502-ADEC-044DAD394FF8}.Release|x86.Build.0 = Release|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Debug|x64.Build.0 = Debug|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Debug|x86.Build.0 = Debug|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Release|x64.ActiveCfg = Release|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Release|x64.Build.0 = Release|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Release|x86.ActiveCfg = Release|Any CPU
+		{250AA24A-EAC2-4885-8E9B-91553047C722}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,5 +96,6 @@ Global
 		{EEDE9021-DE7E-420B-8DDB-3CDB419E518D} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{11B05389-C731-4D47-9578-E46328BDDC69} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{A7C48256-9E37-4502-ADEC-044DAD394FF8} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{250AA24A-EAC2-4885-8E9B-91553047C722} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 	EndGlobalSection
 EndGlobal
