@@ -1,0 +1,94 @@
+{
+  "fixed_acidity": 7.4,
+  "volatile_acidity": 0.7,
+  "citric_acid": 0.0,
+  "residual_sugar": 1.9,
+  "chlorides": 0.076,
+  "free_sulfur_dioxide": 11.0,
+  "total_sulfur_dioxide": 34.0,
+  "density": 0.9978,
+  "pH": 3.51,
+  "sulphates": 0.56,
+  "alcohol": 9.4,
+  "color": "red"
+}
+
+// 5
+{
+    "fixed_acidity": 7.9,
+    "volatile_acidity": 0.18,
+    "citric_acid": 0.37,
+    "residual_sugar": 1.2,
+    "chlorides": 0.04,
+    "free_sulfur_dioxide": 16.0,
+    "total_sulfur_dioxide": 75.0,
+    "density": 0.992,
+    "pH": 3.18,
+    "sulphates": 0.63,
+    "alcohol": 10.8,
+    "color": "white"
+}
+
+// 7
+  {
+    "fixed_acidity": 6.6,
+    "volatile_acidity": 0.16,
+    "citric_acid": 0.4,
+    "residual_sugar": 1.5,
+    "chlorides": 0.044,
+    "free_sulfur_dioxide": 48.0,
+    "total_sulfur_dioxide": 143.0,
+    "density": 0.9912,
+    "pH": 3.54,
+    "sulphates": 0.52,
+    "alcohol": 12.4,
+    "color": "white"
+  }
+
+// 5
+  {
+    "fixed_acidity": 8.3,
+    "volatile_acidity": 0.42,
+    "citric_acid": 0.62,
+    "residual_sugar": 19.25,
+    "chlorides": 0.04,
+    "free_sulfur_dioxide": 41.0,
+    "total_sulfur_dioxide": 172.0,
+    "density": 1.0002,
+    "pH": 2.98,
+    "sulphates": 0.67,
+    "alcohol": 9.7,
+    "color": "white"
+  }
+
+  // 7
+  {
+    "fixed_acidity": 6.6,
+    "volatile_acidity": 0.17,
+    "citric_acid": 0.38,
+    "residual_sugar": 1.5,
+    "chlorides": 0.032,
+    "free_sulfur_dioxide": 28.0,
+    "total_sulfur_dioxide": 112.0,
+    "density": 0.9914,
+    "pH": 3.25,
+    "sulphates": 0.55,
+    "alcohol": 11.4,
+    "color": "white"
+  }
+
+  // 8
+  {
+    "fixed_acidity": 6.3,
+    "volatile_acidity": 0.48,
+    "citric_acid": 0.04,
+    "residual_sugar": 1.1,
+    "chlorides": 0.046,
+    "free_sulfur_dioxide": 30.0,
+    "total_sulfur_dioxide": 99.0,
+    "density": 0.9928,
+    "pH": 3.24,
+    "sulphates": 0.36,
+    "alcohol": 9.6,
+    "color": "white"
+  }

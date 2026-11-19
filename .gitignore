@@ -1,0 +1,14 @@
+# .NET build output and IDE files
+**/bin/
+**/obj/
+.vs/
+*.user
+
+# Python environments, bytecode, and test caches
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+*.py[cod]
+
+# Local model artifacts are copied into the service locally and should not be committed.
+python-service/artifacts/*.joblib
