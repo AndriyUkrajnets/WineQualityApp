@@ -95,16 +95,16 @@ Responsibilities:
 
 An existing trained regression model is available as a Joblib file.
 
-Important: The Joblib file contains only the trained estimator, not a complete Scikit-learn preprocessing pipeline.
+The current artifact export script in `C:\projects\Data Science\Regression\wine_quality` saves a fitted Scikit-learn `Pipeline`, not a bare estimator. It contains a `ColumnTransformer` and a `RandomForestRegressor`. The preprocessing passes the 11 numeric features through unchanged and one-hot encodes `color` (`red` or `white`). The final Random Forest does not use numerical scaling. Confirm the artifact's actual type and feature metadata when it is added to this repository; if it differs from the export script, inspect the training code and reproduce that artifact's preprocessing exactly.
 
 Before implementing inference:
 1. Inspect the model and its expected input.
 2. Inspect the original training notebook or script when available.
-3. Identify the exact feature order.
-4. Identify numerical scaling or transformations.
-5. Identify how wine color was encoded.
-6. Reproduce the original preprocessing exactly.
-7. Verify predictions against known examples from the original training environment.
+3. Identify the exact feature order: the 11 numeric features listed below, followed by `color`.
+4. Confirm numerical scaling or transformations from the artifact and training code. The current export uses numeric passthrough for the Random Forest.
+5. Confirm wine color encoding from the artifact and training code. The current export uses `OneHotEncoder(handle_unknown="ignore")` inside the pipeline.
+6. Reuse preprocessing contained in the fitted pipeline; do not duplicate it in the service. If the artifact is a bare estimator instead, reproduce the original preprocessing exactly.
+7. Verify predictions against known examples from the original training environment before relying on production predictions.
 
 Never assume that raw input values can be passed directly to the model.
 
