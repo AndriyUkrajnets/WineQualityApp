@@ -12,14 +12,20 @@ metadata file alongside it for version and training details.
 
 ## Run locally
 
-From this directory, install the requirements and start the development server:
+From this directory, install the development requirements and start the server:
 
 ```powershell
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 python -m uvicorn app.main:app --reload
 ```
 
 The default URL is `http://127.0.0.1:8000`.
+
+Run the Python tests from either the repository root or this directory with:
+
+```powershell
+python -m pytest
+```
 
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
