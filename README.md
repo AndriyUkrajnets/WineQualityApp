@@ -32,6 +32,20 @@ address printed by `dotnet run`.
 The API does not yet persist predictions or provide history. SQL Server and
 history endpoints are a later milestone.
 
+## Run the React frontend
+
+Start the Python ML service and .NET API, then from this directory:
+
+```powershell
+cd frontend
+npm.cmd install
+npm.cmd run dev
+```
+
+The frontend is served at `http://localhost:5173`. Vite proxies `/api` and
+`/health` to `http://localhost:5294`. Override the target with
+`VITE_API_PROXY_TARGET` when using a different .NET API address.
+
 ## Run .NET unit tests
 
 Stop a running .NET API instance, then run from this directory:
